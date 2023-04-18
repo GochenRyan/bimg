@@ -34,3 +34,4 @@ target("libBImg")
     
     add_files(BIMG_DIR .. "src/image.cpp")
     add_files(BIMG_DIR .. "src/image_gnf.cpp")
+    add_files(BIMG_DIR .. "3rdparty/astc-encoder/source/*.cpp")
