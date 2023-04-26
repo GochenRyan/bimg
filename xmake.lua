@@ -1,6 +1,10 @@
 target("libBImg")
     set_kind("static")
 
+    add_deps(
+        "libBX"
+    )
+
     local BX_DIR = "$(projectdir)/Vendor/bx/"
     local BIMG_DIR = "$(projectdir)/Vendor/bimg/"
 
