@@ -10,6 +10,8 @@ target("libBImg")
 
     add_includedirs(BIMG_DIR .. "include")
     add_includedirs(BIMG_DIR .. "3rdparty/astc-encoder/include")
+    add_includedirs(BIMG_DIR .. "3rdparty")
+    add_includedirs(BIMG_DIR .. "3rdparty/tinyexr/deps/miniz")
     add_includedirs(BX_DIR .. "include")
     
     if is_plat("windows") then 
@@ -38,4 +40,6 @@ target("libBImg")
     
     add_files(BIMG_DIR .. "src/image.cpp")
     add_files(BIMG_DIR .. "src/image_gnf.cpp")
+    add_files(BIMG_DIR .. "src/image_decode.cpp")
+    add_files(BIMG_DIR .. "3rdparty/tinyexr/deps/miniz/*.c")
     add_files(BIMG_DIR .. "3rdparty/astc-encoder/source/*.cpp")
