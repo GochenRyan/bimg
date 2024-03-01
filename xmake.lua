@@ -43,3 +43,5 @@ target("libBImg")
     add_files(BIMG_DIR .. "src/image_decode.cpp")
     add_files(BIMG_DIR .. "3rdparty/tinyexr/deps/miniz/*.c")
     add_files(BIMG_DIR .. "3rdparty/astc-encoder/source/*.cpp")
+
+    set_group("Vendor")
